@@ -10,10 +10,10 @@ export class historyScene extends Scene {
         setInterval(() => {
             if (opacidade > 0) {
                 opacidade -= 0.01
-    
+
                 elemento.style.opacity = opacidade.toString()
             }
-        }, 10 )
+        }, 10)
 
     }
 
@@ -61,7 +61,7 @@ export class historyScene extends Scene {
         this.input.keyboard.on("press", (event) => {
             if (event.key == Keys.Enter) {
 
-                this.fadeOutElemnt (this.elementoTexto!)
+                this.fadeOutElemnt(this.elementoTexto!)
 
                 engine.goToScene("gamificacao")
             }
