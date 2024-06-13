@@ -1,11 +1,12 @@
-import { Actor, CollisionType, Color, Engine, Keys, vec } from "excalibur";
+import { Actor, Animation, CollisionType, Color, Engine, Keys, SpriteSheet, Vector, vec } from "excalibur";
+import { Resources } from "../resources";
 
 export class Player extends Actor {
     private velocidade: number = 180
 
-    constructor() {
+    constructor(posicao: Vector) {
         super({
-            pos: vec(600, 632),
+            pos: posicao,
             width: 32,
             height: 32,
             name: "Jogador",
@@ -15,6 +16,37 @@ export class Player extends Actor {
     }
 
     onInitialize(engine: Engine<any>): void {
+        const PlayerSpriteSheet = SpriteSheet.fromImageSource({
+            image: Resources.PlayerSpriteSheet,
+            grid: {
+                spriteWidth: 32,
+                spriteHeight: 64,
+                columns: 56,
+                rows: 20
+            },
+            spacing: {
+                originOffset: {
+                    y: 4
+                }
+            }
+        })
+        const duracaoFrameAnimacao = 70
+
+        
+        const leftIdle = new Animation({
+            frames: [
+                { graphic: PlayerSpriteSheet.getSprite(12, 1) },
+                { graphic: PlayerSpriteSheet.getSprite(13, 1) },
+                { graphic: PlayerSpriteSheet.getSprite(14, 1) },
+                { graphic: PlayerSpriteSheet.getSprite(15, 1) },
+                { graphic: PlayerSpriteSheet.getSprite(16, 1) },
+                { graphic: PlayerSpriteSheet.getSprite(17, 1) },
+            ], frameDuration: duracaoFrameAnimacao
+        })
+        this.graphics.add("left-Idle", leftIdle)
+
+        this.graphics.use("left-Idle")
+
         engine.input.keyboard.on("hold", (event) => {
             switch (event.key) {
                 case Keys.Left:

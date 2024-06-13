@@ -4,7 +4,7 @@
  <tileset firstgid="8285" source="tileset_generic.tsx"/>
  <tileset firstgid="9533" source="tileset_biblioteca.tsx"/>
  <tileset firstgid="10077" source="tileset_estoque.tsx"/>
- <layer id="1" name="Piso" width="29" height="20" locked="1">
+ <layer id="1" name="Piso" width="29" height="20">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -29,7 +29,7 @@
 </data>
  </layer>
  <objectgroup id="10" name="Personagens">
-  <object id="31" name="player_spawn" x="464" y="526">
+  <object id="31" name="player_spawn" x="464.042" y="529">
    <point/>
   </object>
   <object id="32" name="npc_a" x="240" y="216.667">
