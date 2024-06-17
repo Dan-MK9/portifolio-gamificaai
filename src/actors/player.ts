@@ -215,6 +215,41 @@ export class Player extends Actor {
                 this.graphics.use(this.ultimaDirecao + "-Idle")
             }
         })
+
+        engine.input.keyboard.on("press", (event) => {
+            if (event.key == Keys.F && this.temObjetoProximo) {
+                
+                if(this.ultimoColisor?.owner.name == "mesa_a") {
+                    console.log("Essa é a mesa A")
+
+                    engine.goToScene("case", {
+                        sceneActivationData: {
+                            nomeDoActor: this.ultimoColisor.owner.name
+                        }
+                    })
+                }
+
+                if(this.ultimoColisor?.owner.name == "mesa_b") {
+                    console.log("Essa é a mesa B")
+
+                    engine.goToScene("case", {
+                        sceneActivationData: {
+                            nomeDoActor: this.ultimoColisor.owner.name
+                        }
+                    })
+                }
+
+                if(this.ultimoColisor?.owner.name == "mesa_c") {
+                    console.log("Essa é a mesa C")
+
+                    engine.goToScene("case", {
+                        sceneActivationData: {
+                            nomeDoActor: this.ultimoColisor.owner.name
+                        }
+                    })
+                }
+            }
+        })
     }
 
     onPreCollisionResolve(self: Collider, other: Collider, side: Side, contact: CollisionContact): void {
