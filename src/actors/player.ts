@@ -35,7 +35,7 @@ export class Player extends Actor {
                 }
             }
         })
-        const duracaoFrameAnimacao = 70
+        const duracaoFrameAnimacao = 82
 
         
         const leftIdle = new Animation({
@@ -248,6 +248,11 @@ export class Player extends Actor {
                         }
                     })
                 }
+            }
+        })
+        engine.input.keyboard.on("press", (event) => {
+            if (event.key == Keys.Esc) {
+                engine.goToScene("exposicao")
             }
         })
     }

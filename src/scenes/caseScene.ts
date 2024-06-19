@@ -3,15 +3,13 @@ import { Resources } from "../resources";
 
 export class caseScene extends Scene {
     private objetoInteração: any
-    private textoDaCena: string = ""
-    private textoDoCase: string = ""
     textoA?: HTMLElement
 
     onTransition(direction: "in" | "out"): Transition | undefined {
         return new FadeInOut({
             direction: direction,
             color: Color.Black,
-            duration: 500
+            duration: 200
         })
     }
 
@@ -28,8 +26,6 @@ export class caseScene extends Scene {
     onActivate(context: SceneActivationContext<unknown>): void {
         this.objetoInteração = context.data
 
-        // console.log(this.objetoInteração);
-
         if (this.objetoInteração.nomeDoActor == "mesa_a") {
             let actorImagemCaseA = new Actor({
                 pos: vec(925, 400)
@@ -43,7 +39,7 @@ export class caseScene extends Scene {
 
             this.add(actorImagemCaseA)
 
-            this.backgroundColor = Color.fromHex("#403f4c")
+            this.backgroundColor = Color.fromHex("#3e4758")
 
             this.textoA = document.createElement("div") as HTMLElement
             this.textoA.style.opacity = "1"
@@ -67,7 +63,19 @@ export class caseScene extends Scene {
         }
 
         if (this.objetoInteração.nomeDoActor == "mesa_b") {
-            this.backgroundColor = Color.fromHex("#403f4c")
+            let actorImageCaseB = new Actor({
+                pos: vec(925, 400)
+            })
+
+            let ImagemCaseB = Resources.ImagemCaseB.toSprite()
+
+            ImagemCaseB.scale = vec(0.7, 0.7)
+
+            actorImageCaseB.graphics.add(ImagemCaseB)
+
+            this.add(actorImageCaseB)
+
+            this.backgroundColor = Color.fromHex("#272b34")
 
             this.textoA = document.createElement("div") as HTMLElement
             this.textoA.style.opacity = "1"
@@ -90,7 +98,19 @@ export class caseScene extends Scene {
         }
 
         if (this.objetoInteração.nomeDoActor == "mesa_c") {
-            this.backgroundColor = Color.fromHex("#403f4c")
+            let actorImagemCaseC = new Actor({
+                pos: vec(925, 400)
+            })
+
+            let ImagemCaseC = Resources.ImagemCaseC.toSprite()
+
+            ImagemCaseC.scale = vec(0.7, 0.7)
+
+            actorImagemCaseC.graphics.add(ImagemCaseC)
+
+            this.add(actorImagemCaseC)
+
+            this.backgroundColor = Color.fromHex("#222631")
 
             this.textoA = document.createElement("div") as HTMLElement
             this.textoA.style.opacity = "1"
@@ -112,5 +132,9 @@ export class caseScene extends Scene {
           o que resultou em um ambiente de trabalho mais integrado e produtivo, com impactos positivos nos resultados financeiros e na satisfação dos clientes.
         </p>`
         }
+    }
+
+    onDeactivate(context: SceneActivationContext<undefined>): void {
+        this.textoA!.style.opacity = "0"
     }
 }

@@ -126,31 +126,31 @@
  </layer>
  <objectgroup id="9" name="ObjetosColisores">
   <object id="4" name="arcade" x="544" y="466.125" width="127.75" height="44.125"/>
-  <object id="5" name="mesa_bilhar" x="560.25" y="342.682" width="95.25" height="59.2727"/>
+  <object id="5" name="mesa_bilhar" x="560.25" y="342.682" width="95.25" height="71.0227"/>
   <object id="6" name="taco_bilhar" x="676.182" y="466.364" width="26" height="41.8182"/>
   <object id="7" name="poltrona_b" x="777.909" y="461.818" width="44" height="28.0909"/>
   <object id="8" name="poltrona_a" x="713.818" y="461.682" width="44" height="28.0909"/>
-  <object id="9" name="raque_a" x="725.951" y="402.375" width="106.049" height="23.875"/>
+  <object id="9" name="raque_a" x="725.951" y="402.375" width="106.049" height="33.4205"/>
   <object id="10" name="estante_a" x="106" y="443.375" width="21.875" height="66.5625"/>
   <object id="11" name="estante_b" x="289.913" y="408.841" width="22.087" height="101.097"/>
   <object id="12" name="cadeira_a" x="161.818" y="471.545" width="28.1818" height="26.4788"/>
   <object id="13" name="cadeira_b" x="225.818" y="471.636" width="28.1818" height="26.2643"/>
   <object id="14" name="cabeceira_a" x="193.847" y="438.415" width="28.1818" height="29.5455"/>
-  <object id="15" name="raque_c" x="99.8636" y="358.17" width="22.129" height="42.5233"/>
-  <object id="16" name="raque_b" x="164.048" y="357.642" width="21.7851" height="42.9259"/>
-  <object id="17" name="sofa_a" x="209.818" y="348.909" width="44" height="52.8693"/>
-  <object id="18" name="pc_a" x="137.875" y="233.875" width="44.125" height="41.375"/>
-  <object id="20" name="pc_c" x="585.392" y="233.784" width="44.5163" height="41.167"/>
-  <object id="21" name="pc_b" x="362.119" y="233.784" width="43.9076" height="40.2579"/>
-  <object id="22" name="mesa_b" x="425.814" y="248.771" width="76.0625" height="21.4147"/>
-  <object id="23" name="mesa_a" x="202.031" y="249.281" width="76.0625" height="20.6875"/>
-  <object id="24" name="mesa_c" x="650.105" y="247.793" width="75.9375" height="22.5057"/>
-  <object id="25" name="raque_d" x="287.802" y="242.156" width="32.2188" height="25.662"/>
-  <object id="26" name="raque_e" x="511.906" y="242.219" width="31.9375" height="25.8886"/>
-  <object id="27" name="raque_f" x="736.073" y="242.26" width="31.9375" height="25.9261"/>
-  <object id="28" name="servidor" x="159.531" y="124.344" width="94.6875" height="23.3523"/>
-  <object id="29" name="planta_a" x="99.9403" y="122.185" width="24.0284" height="14.6534"/>
-  <object id="30" name="planta_b" x="803.94" y="119.957" width="23.9375" height="17.375"/>
+  <object id="15" name="raque_c" x="99.8636" y="358.17" width="22.129" height="51.9778"/>
+  <object id="16" name="raque_b" x="164.048" y="357.642" width="21.7851" height="52.3407"/>
+  <object id="17" name="sofa_a" x="209.818" y="351.727" width="44" height="64.2329"/>
+  <object id="18" name="pc_a" x="137.875" y="233.875" width="44.125" height="54.1932"/>
+  <object id="20" name="pc_c" x="585.392" y="233.784" width="44.5163" height="54.0761"/>
+  <object id="21" name="pc_b" x="362.119" y="233.784" width="43.9076" height="54.167"/>
+  <object id="22" name="mesa_b" x="425.814" y="248.771" width="76.0625" height="33.0397"/>
+  <object id="23" name="mesa_a" x="202.031" y="249.281" width="76.0625" height="32.7784"/>
+  <object id="24" name="mesa_c" x="650.105" y="247.793" width="75.9375" height="34.1307"/>
+  <object id="25" name="raque_d" x="287.802" y="242.156" width="32.2188" height="37.662"/>
+  <object id="26" name="raque_e" x="511.906" y="242.219" width="31.9375" height="37.6386"/>
+  <object id="27" name="raque_f" x="736.073" y="242.26" width="31.9375" height="37.4716"/>
+  <object id="28" name="servidor" x="159.531" y="124.344" width="94.6875" height="35.5341"/>
+  <object id="29" name="planta_a" x="99.9403" y="122.185" width="24.0284" height="21.6534"/>
+  <object id="30" name="planta_b" x="803.94" y="119.957" width="23.9375" height="24.1023"/>
  </objectgroup>
  <objectgroup id="10" name="Personagens" locked="1">
   <object id="31" name="player_spawn" x="464.042" y="529">
