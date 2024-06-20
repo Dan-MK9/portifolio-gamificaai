@@ -32,7 +32,7 @@ export class npc extends Actor {
                 { graphic: NPCaSpriteSheet.getSprite(22, 1) },
                 { graphic: NPCaSpriteSheet.getSprite(23, 1) },
             ],
-            frameDuration: 150
+            frameDuration: 100
         })
         this.graphics.add("down-idle-a", downIdleA)
 
@@ -56,7 +56,7 @@ export class npc extends Actor {
                 { graphic: NPCbSpriteSheet.getSprite(22, 1) },
                 { graphic: NPCbSpriteSheet.getSprite(23, 1) },
             ],
-            frameDuration: 150
+            frameDuration: 100
         })
         this.graphics.add("down-idle-b", downIdleB)
 
@@ -80,7 +80,7 @@ export class npc extends Actor {
                 { graphic: NPCcSpriteSheet.getSprite(22, 1) },
                 { graphic: NPCcSpriteSheet.getSprite(23, 1) },
             ],
-            frameDuration: 150
+            frameDuration: 100
         })
         this.graphics.add("down-idle-c", downIdleC)
 

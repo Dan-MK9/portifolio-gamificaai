@@ -20,7 +20,6 @@ export class Player extends Actor {
     }
 
     onInitialize(engine: Engine<any>): void {
-        engine.toggleDebug()
         const PlayerSpriteSheet = SpriteSheet.fromImageSource({
             image: Resources.PlayerSpriteSheet,
             grid: {

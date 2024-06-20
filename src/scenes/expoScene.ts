@@ -57,9 +57,9 @@ export class expoScene extends Scene {
             "c"
         )
 
-        npcA.z = 2
-        npcB.z = 2
-        npcC.z = 2
+        npcA.z = 1
+        npcB.z = 1
+        npcC.z = 1
 
         this.add(npcA)
         this.add(npcB)
