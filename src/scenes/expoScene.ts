@@ -67,7 +67,7 @@ export class expoScene extends Scene {
 
         this.camera.strategy.lockToActor(Jogador)
         this.camera.zoom = 2
-        Jogador.z = 1
+        Jogador.z = 0
 
         let camadaObjetosColisores = tiledMap.getObjectLayers("ObjetosColisores")[0]
 

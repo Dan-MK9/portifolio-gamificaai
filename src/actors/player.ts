@@ -11,8 +11,8 @@ export class Player extends Actor {
     constructor(posicao: Vector) {
         super({
             pos: posicao,
-            width: 32,
-            height: 32,
+            width: 26,
+            height: 26,
             name: "Jogador",
             color: Color.Red,
             collisionType: CollisionType.Active
